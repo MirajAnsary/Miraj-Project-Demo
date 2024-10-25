@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> crete password</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+  
+
+		
+		
+
+</head>
+<body>
+	<div id="container">
+	<form action=# method="post"  onsubmit="return validate()">
+		<p>
+			<h1 style="font-style: 30px;text-align: center;">
+				Register Your Account
+			<br/>
+			Registion form</h1>
+		</p>
+		<p>
+			<label for="username">Username</label>
+			<input  id ="username" placeholder="username" type="text" name="username">
+		</p>
+		<p>
+			<label for="password"> Password</label>
+			<input  id ="password" placeholder="password" type="password" name="password">
+
+		</p>
+		<p>
+		     <label for="corfirm-password"> Confirm Password</label>
+			<input  id ="password" placeholder="password" type="password" name="password" onkeyup="check(this)">
+			<error id="alert"></error>	
+		</p>
+		<p>
+
+			<input id="submit" type="submit" name="submit" value="SUBMIT" style="background: green;">
+		</p>
+
+	</form>
+</div>
+</body>
+
+<script src="script.js"></script>	
+</html>
